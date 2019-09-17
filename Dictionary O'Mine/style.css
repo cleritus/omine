@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
@@ -19,11 +18,13 @@ body {
 }
 
 button {
-  border-style: none;
-  border-radius: 10%;
   background-color: cornflowerblue;
-  padding: 10px;
   color: #fefefe;
+  border-style: none;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 12px;
+  text-transform: capitalize;
   cursor: pointer;
 
 }
@@ -54,6 +55,7 @@ aside {
 
 aside button {
   margin: 10px;
+  width: 70px;
 }
 
 .slider-container {
@@ -137,4 +139,8 @@ td {
 
 td:nth-child(3) {
   width: 400px;
+}
+
+.hidden {
+  opacity: 0;
 }
