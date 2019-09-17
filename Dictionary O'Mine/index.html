@@ -25,7 +25,7 @@
         <button>hide translation</button>
         <button>hide example</button>
       </div>
-      <button>show all</button>
+      <button>hide all</button>
       <button>test</button>
     </aside>
 
@@ -40,16 +40,15 @@
 
     <section class="s1">
       <div class="panel-container container">
-        <div class="panel">
-          <input type="text" placeholder="word">
-          <input type="text" placeholder="translation">
-          <input type="text" placeholder="example sentence">
-        </div>
-        <button class="add-btn">add</button>
+        <form class="panel">
+          <input class="word-input" type="text" placeholder="word">
+          <input class="translation-input" type="text" placeholder="translation">
+          <input class="example-input" type="text" placeholder="example sentence">
+          <button class="add-btn" type="submit">add</button>
+        </form>
+
         <input class="search" type="text" placeholder="search">
       </div>
-
-
     </section>
 
     <section class="box-container container">
@@ -61,27 +60,22 @@
             <td>Example sentence</td>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="tbody">
           <tr>
-            <td>word1</td>
-            <td>słowo1</td>
-            <td>A sentence including word1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque
-              porro rem nulla molestias labore natus, neque harum quae doloribus.</td>
+            <td>burn</td>
+            <td>płonąć</td>
+            <td>Let it burn</td>
           </tr>
-          <tr>
-            <td>word2</td>
-            <td>słowo2</td>
-            <td>A sentence including word1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque
-              porro rem nulla molestias labore natus, neque harum quae doloribus.</td>
-          </tr>
+
         </tbody>
       </table>
     </section>
 
-    <section class="test"></section>
+    <section class="test">
+    </section>
   </div>
 
-  <script src=""></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
