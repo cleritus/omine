@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
@@ -19,13 +18,14 @@ body {
 }
 
 button {
+  background-color: transparent;
+  color: rgb(201, 67, 67);
   border-style: none;
-  border-radius: 10%;
-  background-color: cornflowerblue;
-  padding: 10px;
-  color: #fefefe;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 12px;
+  text-transform: capitalize;
   cursor: pointer;
-
 }
 
 header {
@@ -45,15 +45,8 @@ header {
   font-weight: bold;
 }
 
-aside {
+.main-container {
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  width: 100px;
-}
-
-aside button {
-  margin: 10px;
 }
 
 .slider-container {
@@ -61,23 +54,22 @@ aside button {
   flex-direction: column;
   margin: auto;
   justify-content: center;
-  width: 200px;
-  height: 70px;
-  margin-bottom: 50px;
+  max-width: 300px;
+  margin-bottom: 30px;
 }
 
 .slider {
-  width: 100%;
-  background-color: lightskyblue;
+  background-color: transparent;
   font-size: 30px;
-  color: #fefefe;
+  color: rgb(201, 67, 67);
   text-align: center;
-  line-height: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .pause-btn {
+  /* text-align: center; */
   margin: auto;
+  color: cornflowerblue;
 }
 
 section.s1 {
@@ -93,9 +85,13 @@ section.s1 {
   background-color: beige
 }
 
-.add-btn {
+.add-btn,
+.test-btn {
   width: 50px;
-  margin-bottom: 30px;
+  height: 20px;
+  background-color: cornflowerblue;
+  color: #fefefe;
+  line-height: 10px;
 }
 
 .search {
@@ -131,10 +127,22 @@ tbody>tr:nth-child(even) {
 }
 
 td {
+  position: relative;
   width: 150px;
   padding: 5px 10px;
 }
 
+td>button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
 td:nth-child(3) {
   width: 400px;
+}
+
+.hidden {
+  opacity: 0;
 }

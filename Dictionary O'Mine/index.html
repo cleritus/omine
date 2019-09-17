@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="none">
   <title>Dictionary OM</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,22 +22,13 @@
       </div>
     </header>
 
-    <aside>
-      <div class="checkbox">
-        <button>hide words</button>
-        <button>hide translation</button>
-        <button>hide example</button>
-      </div>
-      <button>hide all</button>
-      <button>test</button>
-    </aside>
-
     <main>
       <div class="main-container container">
         <div class="slider-container">
           <div class="slider">word</div>
-          <button class="pause-btn">pause</button>
+          <button class="pause-btn"><i class="fas fa-pause"></i></button>
         </div>
+        <button class="test-btn">test</button>
       </div>
     </main>
 
@@ -42,7 +36,7 @@
       <div class="panel-container container">
         <form class="panel">
           <input class="word-input" type="text" placeholder="word">
-          <input class="translation-input" type="text" placeholder="translation">
+          <input class="translate-input" type="text" placeholder="translate">
           <input class="example-input" type="text" placeholder="example sentence">
           <button class="add-btn" type="submit">add</button>
         </form>
@@ -55,9 +49,19 @@
       <table>
         <thead>
           <tr>
-            <td>Word</td>
-            <td>Translation</td>
-            <td>Example sentence</td>
+            <td>
+              <span>Word</span>
+              <button class="word-btn"><i class="fas fa-eye-slash"></i>
+              </button>
+            </td>
+            <td>
+              <span>Translate</span>
+              <button class="translate-btn"><i class="fas fa-eye-slash"></i></button>
+            </td>
+            <td>
+              <span>Example sentence</span>
+              <button class="example-btn"><i class="fas fa-eye-slash"></i></button>
+            </td>
           </tr>
         </thead>
         <tbody class="tbody">
