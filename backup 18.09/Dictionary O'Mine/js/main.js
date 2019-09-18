@@ -13,16 +13,10 @@ const wordBtn = document.querySelector('.word-btn');
 const translateBtn = document.querySelector('.translate-btn');
 const exampleBtn = document.querySelector('.example-btn');
 
-const banner = document.querySelector('.slider');
-const pauseBtn = document.querySelector('.pause-btn');
-
-const time = 2000;
-
-// Add terms to the dictionary
 
 const addTerm = (e) => {
   e.preventDefault();
-  if ((inputWord.value === '') || (inputTranslate.value === '') || (inputExample.value === '')) return;
+  // if ((inputWord.value === '') || (inputTranslate.value === '') || (inputExample.value === '')) return;
 
   const tr = document.createElement('tr');
   tbody.appendChild(tr);
@@ -50,6 +44,7 @@ const addTerm = (e) => {
   inputWord.value = '';
   inputTranslate.value = '';
   inputExample.value = '';
+
 }
 
 //After click show or hide columns
@@ -66,40 +61,11 @@ const hideExample = () => {
   exampleArray.forEach(item => item.classList.toggle('hidden'))
 }
 
-// Change words in a main banner - setInterval
+// Change words in a frame
 
-let index = 0;
 
-const show = () => {
-  if (index === wordArray.length) {
-    index = 0;
-  }
-  banner.textContent = wordArray[index].textContent;
-  index++;
-};
-
-const slider = () => (wordArray.length === 0) ? banner.textContent = 'Put your first term' : show();
-
-let sliderInterval = setInterval(slider, time);
-let active = false;
-
-const stopInterval = () => {
-  if (!active) {
-    clearInterval(sliderInterval);
-    pauseBtn.style.backgroundColor = 'cornflowerblue';
-    pauseBtn.style.color = '#fefefe';
-    active = !active;
-  } else if (active) {
-    sliderInterval = setInterval(slider, time);
-    pauseBtn.style.backgroundColor = 'transparent';
-    pauseBtn.style.color = 'cornflowerblue';
-    active = !active;
-  }
-
-}
 
 addBtn.addEventListener('click', addTerm);
 wordBtn.addEventListener('click', hideWords);
 translateBtn.addEventListener('click', hideTranslate);
 exampleBtn.addEventListener('click', hideExample);
-pauseBtn.addEventListener('click', stopInterval);
