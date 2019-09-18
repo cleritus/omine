@@ -59,6 +59,7 @@ header {
 }
 
 .slider {
+  height: 50px;
   background-color: transparent;
   font-size: 30px;
   color: rgb(201, 67, 67);
@@ -67,9 +68,14 @@ header {
 }
 
 .pause-btn {
-  /* text-align: center; */
   margin: auto;
   color: cornflowerblue;
+  transition: .3s
+}
+
+.pause-btn:hover {
+  box-shadow: 2px 2px 8px 0px hsla(0, 2%, 12%, 0.7);
+  scale: 1.5;
 }
 
 section.s1 {
@@ -102,7 +108,7 @@ section.s1 {
 
 .panel input {
   margin: 20px;
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 
 .panel>input:nth-child(3) {
