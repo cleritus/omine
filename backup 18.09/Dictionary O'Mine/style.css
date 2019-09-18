@@ -18,14 +18,15 @@ body {
 }
 
 button {
-  background-color: transparent;
-  color: rgb(201, 67, 67);
+  background-color: cornflowerblue;
+  color: #fefefe;
   border-style: none;
   border-radius: 2px;
   padding: 5px;
   font-size: 12px;
   text-transform: capitalize;
   cursor: pointer;
+
 }
 
 header {
@@ -45,8 +46,16 @@ header {
   font-weight: bold;
 }
 
-.main-container {
+aside {
   display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100px;
+}
+
+aside button {
+  margin: 10px;
+  width: 70px;
 }
 
 .slider-container {
@@ -54,28 +63,23 @@ header {
   flex-direction: column;
   margin: auto;
   justify-content: center;
-  max-width: 300px;
-  margin-bottom: 30px;
+  width: 200px;
+  height: 70px;
+  margin-bottom: 50px;
 }
 
 .slider {
-  height: 50px;
-  background-color: transparent;
+  width: 100%;
+  background-color: lightskyblue;
   font-size: 30px;
-  color: rgb(201, 67, 67);
+  color: #fefefe;
   text-align: center;
-  margin-bottom: 10px;
+  line-height: 100px;
+  margin-bottom: 20px;
 }
 
 .pause-btn {
   margin: auto;
-  color: cornflowerblue;
-  transition: .3s
-}
-
-.pause-btn:hover {
-  box-shadow: 2px 2px 8px 0px hsla(0, 2%, 12%, 0.7);
-  scale: 1.5;
 }
 
 section.s1 {
@@ -91,13 +95,9 @@ section.s1 {
   background-color: beige
 }
 
-.add-btn,
-.test-btn {
+.add-btn {
   width: 50px;
-  height: 20px;
-  background-color: cornflowerblue;
-  color: #fefefe;
-  line-height: 10px;
+  margin-bottom: 30px;
 }
 
 .search {
@@ -108,7 +108,7 @@ section.s1 {
 
 .panel input {
   margin: 20px;
-  padding: 5px 10px;
+  padding: 0 10px;
 }
 
 .panel>input:nth-child(3) {
@@ -133,16 +133,8 @@ tbody>tr:nth-child(even) {
 }
 
 td {
-  position: relative;
   width: 150px;
   padding: 5px 10px;
-}
-
-td>button {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
 }
 
 td:nth-child(3) {
