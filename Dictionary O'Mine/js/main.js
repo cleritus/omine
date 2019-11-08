@@ -27,6 +27,7 @@ function createTable() {
 
   const tdExample = document.createElement('td');
   tr.appendChild(tdExample);
+
   return {
     tdWord,
     tdTranslate,
@@ -39,9 +40,12 @@ function createTable() {
 
 const addTerm = (e) => {
   e.preventDefault();
-  if ((inputWord.value === '') || (inputTranslate.value === '') || (inputExample.value === '')) return;
+  if ((inputWord.value === '') || (inputTranslate.value === '') || (inputExample.value === '')) {
+    return
+  }
 
   const newTerm = new Term(inputWord.value, inputTranslate.value, inputExample.value);
+
   newTerm.pushTerm();
   localStorage.setItem('Dictionary', JSON.stringify(termArr));
 
@@ -59,10 +63,6 @@ const addTerm = (e) => {
   inputTranslate.value = '';
   inputExample.value = '';
 }
-
-//After click show or hide columns
-
-
 
 // Change words in a main banner - setInterval
 
