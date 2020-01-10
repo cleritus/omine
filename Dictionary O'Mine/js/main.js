@@ -87,6 +87,7 @@ const stopInterval = () => {
     pauseBtn.style.backgroundColor = 'cornflowerblue';
     pauseBtn.style.color = '#fefefe';
     active = !active;
+
   } else if (active) {
     sliderInterval = setInterval(slider, time);
     pauseBtn.style.backgroundColor = 'transparent';
@@ -96,3 +97,21 @@ const stopInterval = () => {
 }
 
 addBtn.addEventListener('click', addTerm);
+pauseBtn.addEventListener('click', stopInterval);
+
+// STICKY TABLE's THEAD - fixed when scrolled
+
+$(document).on('scroll', function () {
+
+  const theadOffsetTop = $('.thead').offset().top;
+  const actualHeight = $(document).scrollTop();
+
+  // (actualHeight > theadOffsetTop / 2) ? $('.thead').addClass('active'): $('.thead').removeClass('active');
+
+  if (actualHeight > theadOffsetTop / 2) {
+    $('.thead').addClass('active');
+
+  } else {
+    $('.thead').removeClass('active');
+  }
+})

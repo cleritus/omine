@@ -92,7 +92,8 @@ section.s1 {
 }
 
 .add-btn,
-.test-btn {
+.test-btn,
+.search-btn {
   width: 50px;
   height: 20px;
   background-color: cornflowerblue;
@@ -151,4 +152,13 @@ td:nth-child(3) {
 
 .hidden {
   opacity: 0;
+}
+
+.active {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  min-width: 700px;
 }

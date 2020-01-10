@@ -8,12 +8,10 @@ wordBtn.addEventListener('click', function () {
   let tdNew = [];
   for (let i = 0; i < (tds.length / 3) - 1; i++) {
 
-    console.log(tds[n]);
     tdNew.push(tds[n]);
     n += 3;
   }
 
-  console.log(tdNew);
   tdNew.forEach(td => td.classList.toggle('hidden'));
 })
 
@@ -21,6 +19,7 @@ wordBtn.addEventListener('click', function () {
 
 translateBtn.addEventListener('click', function () {
   const tds = [...document.querySelectorAll('td')];
+
   let n = 4;
   let tdNew = [];
   for (let i = 0; i < (tds.length / 3) - 1; i++) {
@@ -29,7 +28,6 @@ translateBtn.addEventListener('click', function () {
     n += 3;
   }
 
-  console.log(tdNew);
   tdNew.forEach(td => td.classList.toggle('hidden'));
 })
 
@@ -42,11 +40,9 @@ exampleBtn.addEventListener('click', function () {
   let tdNew = [];
   for (let i = 0; i < (tds.length / 3) - 1; i++) {
 
-    console.log(tds[n]);
     tdNew.push(tds[n]);
     n += 3;
   }
 
-  console.log(tdNew);
   tdNew.forEach(td => td.classList.toggle('hidden'));
 })

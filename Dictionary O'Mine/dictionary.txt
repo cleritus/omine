@@ -1,0 +1,57 @@
+[0: {word: "explicit", translate: "wyraźny", example: "I ve heard it explicitly."}
+1: {word: "annotation", translate: "przypis", example: "It was annotation to that book"}
+2: {word: "intend", translate: "zamierzać przeznaczyć", example: "What do you intend to do?"}
+3: {word: "assign", translate: "przypisać", example: "Assign this var to the function"}
+4: {word: "develop", translate: "rozwijać rozbudowywać", example: "Code is developing my hidden skills"}
+5: {word: "internal", translate: "wewnętrzny krajowy", example: "Iternal structure of a company"}
+6: {word: "infer", translate: "wywnioskować na podstawie", example: "I infered it from the text"}
+7: {word: "completion", translate: "ukończenie", example: "We r nearing the completion of the program"}
+8: {word: "reference", translate: "odniesienie związek",…}
+9: {word: "hesitate", translate: "wahać się", example: "I hesitate to send an email"}
+10: {word: "integer", translate: "liczba całkowita", example: "There s no integer in this case"}
+11: {word: "decimal ", translate: "liczba po przecinku", example: "In this data you can t use decimals"}
+12: {word: "revise ", translate: "poprawić", example: "I need to revise this code"}
+13: {word: "deploy", translate: "rozmieścić wdrożyć", example: "Our firm has deployed a system"}
+14: {word: "maintain", translate: "utrzymać", example: "How much did it cost to maintain a balance"}
+15: {word: "fetch", translate: "sprowadzić ściągnąć", example: "It take some time to fetch this data"}
+16: {word: "contradiction", translate: "sprzeczność",…}
+17: {word: "parse ", translate: "rozebrać na części analiza", example: "The text need to be parsed"}
+18: {word: "hyphen", translate: "myślnik",…}
+19: {word: "conduct", translate: "przewodzić prowadzić", example: "Metal conducts electricity"}
+20: {word: "evaluation", translate: "ocena",…}
+21: {word: "feedback", translate: "opinia reakcja", example: "Send me a feedback about it "}
+22: {word: "sophisticated", translate: "wyszukany zaawansowany",…}
+23: {word: "syntax", translate: "składnia wzór",…}
+24: {word: "retrieve", translate: "pobierać odzyskać naprawić",…}
+25: {word: "convenient", translate: "wygodny dogodny", example: "What time would be convenient?"}
+26: {word: "associate", translate: "współpracownik kojarzyć",…}
+27: {word: "assosiation", translate: "związek z stowarzyszenie",…}
+28: {word: "indicate", translate: "wskazać sygnalizować",…}
+29: {word: "attempt", translate: "próbować starać się", example: "I attempt to get to this firm"}
+30: {word: "attend", translate: "uczestniczyć", example: "Nobody attended this conference"}
+31: {word: "mention", translate: "nadmienić", example: "Did i mention seeing her yesterday?"}
+32: {word: "exclude", translate: "wykluczyć pominąć", example: "The price excludes accomodation"}
+33: {word: "consistent", translate: "zgodny konsekwentny",…}
+34: {word: "utility", translate: "użyteczność praktyczny", example: "I value utility"}
+35: {word: "disposal", translate: "dysponowanie usuwanie",…}
+36: {word: "robust", translate: "krzepki solidny intensywny",…}
+37: {word: "scrutiny", translate: "szczegółowa obserwacja",…}
+38: {word: "scarcely", translate: "niewiele dopiero co definitywnie nie",…}
+39: {word: "distinguish", translate: "odróżnić rozpoznać",…}
+40: {word: "interfere", translate: "wtrącać się kolidować", example: "My plans interfere with yours"}
+41: {word: "insult", translate: "znieważać obrażać", example: "He insulted my dog"}
+42: {word: "abuse", translate: "nadużywać wykorzystać", example: "Dont let your boss abuse you"}
+43: {word: "carry out", translate: "wykonywać realizować", example: "I carry out orders from one client"}
+44: {word: "leads", translate: "potencjalni klienci", example: "It will help u to acquire more leads"}
+45: {word: "rely on", translate: "polegać na", example: "U can rely on me"}
+46: {word: "overall", translate: "ogólny całkowity fartuch", example: "Overall score was quite high"}
+47: {word: "hyped", translate: "podjarany nakręcony", example: "Im hyped to work there"}
+48: {word: "hype", translate: "szum medialny podbijać cenę", example: "They hyped their product so much"}
+49: {word: "strive", translate: "dążyć do walczyć przeciw", example: "He strive for success"}
+50: {word: "chastize", translate: "udzielić nagany",…}
+51: {word: "convince", translate: "przekonać", example: "Try to convince me"}
+52: {word: "relief", translate: "ulga wsparcie", example: "She breathed a sigh of relief"}
+53: {word: "according", translate: "według", example: "According to the documentation this is ok"}
+54: {word: "invoke", translate: "przywołać odwołać się",…}
+55: {word: "occur", translate: "pojawić się nastąpić przyjść",…}
+56: {word: "outstanding", translate: "wybitny",…}]
